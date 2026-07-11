@@ -7,7 +7,7 @@ roadmap: the exact topics to master, with concepts and real interview questions,
 official documentation.**
 
 [![CI](https://github.com/alvajose/interviews-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/alvajose/interviews-agent/actions/workflows/ci.yml)
-[![License: FSL-1.1-ALv2](https://img.shields.io/badge/license-FSL--1.1--ALv2-blue.svg)](LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Next.js 16](https://img.shields.io/badge/Next.js-16-black)
 ![TypeScript strict](https://img.shields.io/badge/TypeScript-strict-3178c6)
 
@@ -78,6 +78,12 @@ To run the full product, Supabase accounts, credits, and abuse defense, set
 `.env.example`. Boot validation in `src/lib/env.ts` fails fast and lists any missing required
 variable. You only need this to deploy the paid, multi-user version.
 
+## Knowledge base status
+
+We're actively expanding the interview knowledge base, more stacks, deeper modules, and
+better-sourced question banks. Coverage is incomplete on purpose: treat what's here as a
+solid starting point, and PRs that add or sharpen content are especially welcome.
+
 ## Contributing
 
 Contributions are very welcome, **especially to the agent's knowledge base and its docs.**
@@ -90,7 +96,7 @@ sharpening a concept, fixing an example, or clarifying a guide.
 - **Setup, checks, and code style** → [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Open an issue to discuss anything larger, or send a PR for small fixes. Every doc improvement
-helps someone prep better.
+helps someone prep better. PRs merge to `main` only after maintainer review.
 
 ## Checks
 
@@ -133,15 +139,4 @@ supabase/migrations # Postgres schema for hosted mode
 
 ## License
 
-[Functional Source License 1.1 (ALv2 future)](LICENSE.md), see [LICENSE.md](LICENSE.md).
-
-In plain terms:
-
-- **Free** to use, self-host, modify, and study, including internal commercial use, education,
-  and research.
-- **Not allowed:** using it to build a product or service that competes with our hosted offering.
-  For that, talk to us.
-- Each release **converts to Apache 2.0** two years after it's published.
-
-FSL is "source-available", not an OSI-approved open-source license. Want a commercial
-arrangement? Reach out at help@carinaex.com.
+[MIT](LICENSE). Free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell.
