@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Coins } from "lucide-react";
+import { isLocal } from "@/lib/mode";
 
 // Compact always-visible credit counter (icon + number). Clickable -> /credits to top up.
 // Fetches once on mount; it won't tick down live as you spend within a session, it
@@ -11,13 +12,14 @@ export function CreditsBadge() {
   const [total, setTotal] = useState<number | null>(null);
 
   useEffect(() => {
+    if (isLocal()) return; // no billing in local mode
     fetch("/api/credits/balance")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setTotal(d.total))
       .catch(() => {});
   }, []);
 
-  if (total === null) return null;
+  if (isLocal() || total === null) return null;
 
   return (
     <Link

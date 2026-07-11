@@ -68,8 +68,43 @@ Then start it:
 pnpm dev
 ```
 
-Open **http://localhost:3000/app**, no sign-up, straight in. Your conversations are saved
-to a local SQLite file at `./data/local.db` (gitignored). That's it.
+Open **http://localhost:3000**, no sign-up, straight into the chat. Your conversations are
+saved to a local SQLite file at `./data/local.db` (gitignored). That's it.
+
+### `pnpm dev:local` — force local mode
+
+If your `.env.local` is set up for hosted (it has `NEXT_PUBLIC_SUPABASE_URL`), the app
+defaults to hosted and you'd land on the marketing page instead of the chat. Rather than
+editing that file, just run:
+
+```bash
+pnpm dev:local
+```
+
+It forces `NEXT_PUBLIC_APP_MODE=local` for that run only, your `.env.local` is left
+untouched. Flags pass through (`pnpm dev:local --port 4000`), and you can do a
+production-style local run with `pnpm dev:local build` then `pnpm dev:local start`.
+
+## How mode selection works
+
+`src/lib/mode.ts` resolves the runtime mode once:
+
+- `NEXT_PUBLIC_APP_MODE=local` or `=hosted` wins if set (this is what `dev:local` forces).
+- Otherwise, a configured `NEXT_PUBLIC_SUPABASE_URL` means **hosted**; a bare clone with
+  neither means **local**.
+
+What changes per mode:
+
+| | **Local** | **Hosted** |
+|---|---|---|
+| Entry point (`/`) | The chat, directly | Marketing landing |
+| Auth | None (single implicit user) | Supabase accounts + `/login` |
+| Persistence | SQLite (`./data/local.db`) | Supabase Postgres |
+| Billing / credits | Off | Stripe credits |
+| Terms / Privacy / Refund | Hidden | Shown |
+
+Local mode never links to login, credits, or billing, those pages still exist in the
+codebase (hosted needs them) but are simply never shown.
 
 ## Hosted mode (optional)
 

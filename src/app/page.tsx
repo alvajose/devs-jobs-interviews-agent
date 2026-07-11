@@ -7,6 +7,7 @@ import {
   SITE_TAGLINE,
   siteUrl,
 } from "@/lib/site";
+import { isLocal } from "@/lib/mode";
 import LandingPageClient, { AppWorkspacePage } from "./page-client";
 
 export const metadata: Metadata = {
@@ -21,6 +22,9 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  // Local install: no marketing, no auth, no billing — the entry point IS the chat.
+  if (isLocal()) return <AppWorkspacePage />;
+
   const sampleRoadmap = loadLandingSampleRoadmap();
   const jsonLd = siteJsonLd();
   return (
