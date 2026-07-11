@@ -33,32 +33,32 @@ official documentation.
 
 ## 🤔 Why not just ask ChatGPT, Claude, or Gemini?
 
-You can — and for a one-off question you should. But a raw chatbot gives you a fresh,
+You can, and for a one-off question you should. But a raw chatbot gives you a fresh,
 unstructured answer every time, and will happily invent plausible-sounding interview
 questions. Interviews Agent is opinionated on purpose:
 
-- **Grounded, not guessed** — questions and concepts are curated and cited to official docs
+- **Grounded, not guessed**: questions and concepts are curated and cited to official docs
   and the [Tech Interview Handbook](https://www.techinterviewhandbook.org/), not improvised token-by-token.
-- **A plan, not a chat log** — you get a prioritized roadmap and a day-by-day schedule sized to
+- **A plan, not a chat log**: you get a prioritized roadmap and a day-by-day schedule sized to
   your weeks and hours, that persists and evolves, instead of scrolling back through a thread.
-- **Consistent and complete** — the same stack always covers the same ground; a chatbot forgets
+- **Consistent and complete**: the same stack always covers the same ground; a chatbot forgets
   what it already told you and skips topics between sessions.
-- **Yours and private** — runs fully local on SQLite with your own key. No account, no data leaving your machine.
+- **Yours and private**: runs fully local on SQLite with your own key. No account, no data leaving your machine.
 
-It still *uses* an LLM under the hood — it just puts curated content, structure, and memory around it.
+It still *uses* an LLM under the hood, it just puts curated content, structure, and memory around it.
 
 ## ✨ What you get
 
-- 🗺️ **A personalized roadmap in under a minute** — modules grouped by priority, sized to your weeks and hours.
-- 📚 **Real interview questions** — curated per stack and grounded in official documentation, not LLM trivia.
-- 🧠 **Concepts that teach** — each module explains the *why* and the mental model, with cited sources.
-- 📅 **A day-by-day study plan** — phased tasks linked back to the exact modules to review.
-- 💬 **Coaching follow-ups** — ask questions and reshape the plan in a chat.
-- 🔒 **Local-first & private** — your conversations live in a local SQLite file; no account required.
+- 🗺️ **A personalized roadmap in under a minute**: modules grouped by priority, sized to your weeks and hours.
+- 📚 **Real interview questions**: curated per stack and grounded in official documentation, not LLM trivia.
+- 🧠 **Concepts that teach**: each module explains the *why* and the mental model, with cited sources.
+- 📅 **A day-by-day study plan**: phased tasks linked back to the exact modules to review.
+- 💬 **Coaching follow-ups**: ask questions and reshape the plan in a chat.
+- 🔒 **Local-first & private**: your conversations live in a local SQLite file; no account required.
 
 ## Try it
 
-- **Fastest:** open the [free live demo](https://interviewsagent.carinaex.com) — no install, no sign-up
+- **Fastest:** open the [free live demo](https://interviewsagent.carinaex.com), no install, no sign-up
   to look around.
 - **On your machine:** the [local quick start](#-quick-start-local) below runs the whole app with
   just an LLM key.
@@ -105,7 +105,7 @@ pnpm dev
 Open **http://localhost:3000**, no sign-up, straight into the chat. Your conversations are
 saved to a local SQLite file at `./data/local.db` (gitignored). That's it.
 
-### `pnpm dev:local` — force local mode
+### `pnpm dev:local` → force local mode
 
 If your `.env.local` is set up for hosted (it has `NEXT_PUBLIC_SUPABASE_URL`), the app
 defaults to hosted and you'd land on the marketing page instead of the chat. Rather than
