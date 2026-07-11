@@ -31,6 +31,22 @@ official documentation.
 > It's grounded in official docs and the
 > [Tech Interview Handbook](https://www.techinterviewhandbook.org/).
 
+## 🤔 Why not just ask ChatGPT, Claude, or Gemini?
+
+You can — and for a one-off question you should. But a raw chatbot gives you a fresh,
+unstructured answer every time, and will happily invent plausible-sounding interview
+questions. Interviews Agent is opinionated on purpose:
+
+- **Grounded, not guessed** — questions and concepts are curated and cited to official docs
+  and the [Tech Interview Handbook](https://www.techinterviewhandbook.org/), not improvised token-by-token.
+- **A plan, not a chat log** — you get a prioritized roadmap and a day-by-day schedule sized to
+  your weeks and hours, that persists and evolves, instead of scrolling back through a thread.
+- **Consistent and complete** — the same stack always covers the same ground; a chatbot forgets
+  what it already told you and skips topics between sessions.
+- **Yours and private** — runs fully local on SQLite with your own key. No account, no data leaving your machine.
+
+It still *uses* an LLM under the hood — it just puts curated content, structure, and memory around it.
+
 ## ✨ What you get
 
 - 🗺️ **A personalized roadmap in under a minute** — modules grouped by priority, sized to your weeks and hours.
