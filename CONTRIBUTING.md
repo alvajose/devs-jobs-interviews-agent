@@ -1,8 +1,7 @@
 # Contributing
 
 Thanks for your interest in improving Interviews Agent. This project is
-[source-available under the FSL](LICENSE.md), free to run, self-host, and modify;
-see the license for the details on commercial/competing use.
+licensed under the [MIT License](LICENSE).
 
 ## Prerequisites
 
@@ -57,10 +56,7 @@ license policy (important: don't copy from no-license repos), and how to verify.
 
 ## Licensing of contributions
 
-Contributions are made under the project's [FSL license](LICENSE.md). Because the
-project is dual-licensable, we may ask contributors to agree to a lightweight
-Contributor License Agreement (CLA) before merging, we'll let you know on your
-first PR if that applies.
+Contributions are made under the project's [MIT license](LICENSE).
 
 ## Questions
 
