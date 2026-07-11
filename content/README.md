@@ -20,7 +20,7 @@ here and falls back to LLM-generated content otherwise.
 ---
 stack: laravel                 # folder/stack key
 id: laravel-apis-rest          # stable id (used to match & link)
-title: APIs RESTful con Laravel
+title: RESTful APIs with Laravel
 area: Backend                  # grouping shown in the roadmap
 priority: high                 # high | medium | low
 resourceLabel: Laravel, API Resources   # optional "go deeper" link label
@@ -62,7 +62,7 @@ return UserResource::collection(User::paginate());
 
 ## Interview Questions
 
-### ¿The interview question?
+### The interview question?
 The model answer / talking points.
 ```
 
