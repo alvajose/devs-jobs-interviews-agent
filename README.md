@@ -56,19 +56,6 @@ It still *uses* an LLM under the hood — it just puts curated content, structur
 - 💬 **Coaching follow-ups** — ask questions and reshape the plan in a chat.
 - 🔒 **Local-first & private** — your conversations live in a local SQLite file; no account required.
 
-## 🖼️ Screenshots
-
-<table>
-  <tr>
-    <td align="center" width="50%"><img alt="Roadmap with concepts and real interview questions" src="docs/assets/roadmap.png"><br/><sub>Concepts + real interview questions, grounded in docs</sub></td>
-    <td align="center" width="50%"><img alt="Phased day-by-day study plan" src="docs/assets/study-plan.png"><br/><sub>A day-by-day study plan, sized to you</sub></td>
-  </tr>
-  <tr>
-    <td align="center" width="50%"><img alt="Curated question bank" src="docs/assets/question-bank.png"><br/><sub>Curated question banks from public sources</sub></td>
-    <td align="center" width="50%"><img alt="Prep profile — target role and scope" src="docs/assets/profile.png"><br/><sub>Set your target role, seniority, and pace</sub></td>
-  </tr>
-</table>
-
 ## Try it
 
 - **Fastest:** open the [free live demo](https://interviewsagent.carinaex.com) — no install, no sign-up
