@@ -40,31 +40,18 @@ official documentation.
 - 💬 **Coaching follow-ups** — ask questions and reshape the plan in a chat.
 - 🔒 **Local-first & private** — your conversations live in a local SQLite file; no account required.
 
-<!--
-  📸 SCREENSHOT GALLERY — fill this in to make the README pop.
-  How to host images: open a new GitHub issue in this repo, drag each PNG into the comment
-  box (don't submit it), and copy the https://github.com/user-attachments/... URL it makes.
-  Paste the URLs below, then move this whole block out of the comment (delete these <!-- --> lines).
-
-  Suggested shots — dark mode, ~1280px wide:
-    1. Empty state: greeting + onboarding chips (the first screen)
-    2. Roadmap detail: modules with concepts + interview questions expanded
-    3. Study plan: the phased day-by-day panel
-    4. Question bank: curated real questions expanded
-
 ## 🖼️ Screenshots
 
 <table>
   <tr>
-    <td align="center" width="50%"><img alt="Start screen" src="PASTE_URL_1"><br/><sub>Describe your target role</sub></td>
-    <td align="center" width="50%"><img alt="Roadmap detail" src="PASTE_URL_2"><br/><sub>Concepts + real interview questions</sub></td>
+    <td align="center" width="50%"><img alt="Roadmap with concepts and real interview questions" src="docs/assets/roadmap.png"><br/><sub>Concepts + real interview questions, grounded in docs</sub></td>
+    <td align="center" width="50%"><img alt="Phased day-by-day study plan" src="docs/assets/study-plan.png"><br/><sub>A day-by-day study plan, sized to you</sub></td>
   </tr>
   <tr>
-    <td align="center" width="50%"><img alt="Study plan" src="PASTE_URL_3"><br/><sub>Day-by-day study plan</sub></td>
-    <td align="center" width="50%"><img alt="Question bank" src="PASTE_URL_4"><br/><sub>Curated question banks</sub></td>
+    <td align="center" width="50%"><img alt="Curated question bank" src="docs/assets/question-bank.png"><br/><sub>Curated question banks from public sources</sub></td>
+    <td align="center" width="50%"><img alt="Prep profile — target role and scope" src="docs/assets/profile.png"><br/><sub>Set your target role, seniority, and pace</sub></td>
   </tr>
 </table>
--->
 
 ## Try it
 
