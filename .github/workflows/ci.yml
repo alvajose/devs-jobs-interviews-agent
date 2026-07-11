@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm lint
+
+      - run: pnpm typecheck
+
+      - run: pnpm test:coverage
+
+      # Placeholder public env so `next build` compiles without real secrets.
+      # instrumentation.register() (env validation) runs at server start, not at build,
+      # so these dummy values never trigger it.
+      - run: pnpm build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-anon-key
+          SUPABASE_SERVICE_ROLE_KEY: placeholder-service-role
+          GEMINI_API_KEY: placeholder
+
+  # ponytail: e2e deferred, the public specs need a built+running server and the
+  # authenticated specs need seeded Supabase creds. Add a job here once a preview/staging
+  # env with E2E_USER_EMAIL / E2E_USER_PASSWORD secrets exists.
